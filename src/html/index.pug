@@ -1,0 +1,45 @@
+extends pug/helpers/_pageStructore
+
+//-
+  =======================================================
+  In this a block for including page or anythings
+  =======================================================
+block includes
+  //- include pug/helpers/_helpers
+
+//-
+  =======================================================
+  In this a block we can create a variables for this page
+  =======================================================
+block variables
+  - var Title = "Quran Player";
+//-
+  =======================================================
+  In this a block for add CSS file for this page
+  =======================================================
+block stylesheet
+  title #{Title}
+  //- Add a logo icon for title bar
+  link(rel="shortcut icon", href="imgs/logo.png", type="image/x-icon")
+  //- Normalize Library
+  link(rel="stylesheet", href="css/normalize.css")
+  //- Bondi Style File
+  link(rel="stylesheet", href="css/main.css")
+
+
+//-
+  ====================================================================================================================
+                                              In this a block for page content
+  ====================================================================================================================
+block content 
+  //- ***************************************** Start  *****************************************
+  //- ***************************************** End  *****************************************
+  
+
+//-
+  ====================================================================================================================
+  In this a block for add Js file for this page
+  ====================================================================================================================
+block script
+  //- Main Javascript File
+  script(src="script/script-min.js") 
