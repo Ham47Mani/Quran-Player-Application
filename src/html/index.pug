@@ -23,6 +23,8 @@ block stylesheet
   link(rel="shortcut icon", href="imgs/logo.png", type="image/x-icon")
   //- Normalize Library
   link(rel="stylesheet", href="css/normalize.css")
+  //- FontAwesome Library
+  link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css")
   //- Bondi Style File
   link(rel="stylesheet", href="css/main.css")
 
@@ -32,8 +34,19 @@ block stylesheet
                                               In this a block for page content
   ====================================================================================================================
 block content 
-  //- ***************************************** Start  *****************************************
-  //- ***************************************** End  *****************************************
+  //- ***************************************** Start Quran Application *****************************************
+  .quran 
+    //--- Player
+    .player 
+      .ayah إضغط على السـورة للاستمـاع إليهـا
+      audio.quranPlayer(src="", controls, autoplay)
+      .buttons 
+        .icon.next: i.fas.fa-forward
+        .icon.play: i.fas.fa-play
+        .icon.prev: i.fas.fa-backward
+    //--- Surahs
+    .surahs
+  //- ***************************************** End Quran Application *****************************************
   
 
 //-
@@ -41,5 +54,7 @@ block content
   In this a block for add Js file for this page
   ====================================================================================================================
 block script
+  //- Sweet Alert Library 
+  script(src="//cdn.jsdelivr.net/npm/sweetalert2@11") 
   //- Main Javascript File
   script(src="script/script-min.js") 

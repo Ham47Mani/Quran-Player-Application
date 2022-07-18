@@ -5,13 +5,27 @@
     <meta name="description" content="">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
+    <title>Quran Player</title>
     <link rel="shortcut icon" href="imgs/logo.png" type="image/x-icon">
     <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
     <link rel="stylesheet" href="css/main.css">
   </head>
   <body>
+    <div class="quran"> 
+      <div class="player"> 
+        <div class="ayah">إضغط على السـورة للاستمـاع إليهـا</div>
+        <audio class="quranPlayer" src="" controls autoplay></audio>
+        <div class="buttons"> 
+          <div class="icon next"><i class="fas fa-forward"></i></div>
+          <div class="icon play"><i class="fas fa-play"></i></div>
+          <div class="icon prev"><i class="fas fa-backward"></i></div>
+        </div>
+      </div>
+      <div class="surahs"></div>
+    </div>
     <script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] +':35729/livereload.js?snipver=1"></' + 'script>')</script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"> </script>
     <script src="script/script-min.js"> </script>
   </body>
 </html>
